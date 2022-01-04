@@ -1,0 +1,286 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+p {
+    margin: 0 0 10px 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.header {
+    background: url(../img/intro__active.jpg) center no-repeat;
+    height: 750px;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto  ;
+    padding: 0 15px;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+    align-items: center;
+    border-bottom: 1px solid #4e5168;
+}
+.nav {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase ;
+}
+.link {
+    padding-left: 60px;
+    text-decoration: none;
+    opacity: .75;
+    color: #fff;
+}
+.link:first-child {
+    margin-left: 0;
+}
+.link:hover {
+    opacity: 1;
+}
+.wrapper {
+    text-align: center;
+    padding: 156px;
+    color: #fff;
+}
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding-bottom: 40px;
+}
+.subtitle {
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 81px;
+}
+.btn {
+    vertical-align: top;
+    display: inline-block;
+    color: #fff;
+    background-color: #e84545;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 3px;
+}
+.items {
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    text-align: center;
+    width: 33.33333%;
+    padding: 0 40px;
+    margin: 25px 0;
+}
+.features-icon {
+    margin-bottom: 25px;
+}
+.features-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #3b3e41;
+    font-size: 14px;
+}
+.features-text {
+    line-height: 1.5;
+    color: #6c7279;
+}
+/* Works */
+.section-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.works-item {
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+}
+.works-item:hover .works-content{
+    opacity: 1;
+}
+.works-photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+}
+.works-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(232, 69, 69,
+    0.9);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: opacity 0.2s linear;
+}
+.works-title {
+    margin-bottom: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+.works-text {
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+}
+/* TEAM */
+.section-3 {
+    margin: 100px 0 70px;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.person {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.person-photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.names {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #2d3033;
+}
+.ceo {
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.person-text {
+    color: #6c7279;
+    line-height: 1.5;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.social {
+    display: flex;
+}
+.social-icon {
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e8ecee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: #c6cacc;
+}
+.social-icon:hover {
+    background-color: #e8ecee;
+}
+/* REVIEWS */
+.section-4 {
+    background-color: #53354a;
+}
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+}
+.reviews-photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+.reviews-img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.reviews-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+}
+.reviews-text {
+    margin-bottom: 20px;
+    font-family: 'Cardo', sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+}
+.reviews-author {
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+}
+.download {
+    padding: 100px 0;
+    text-align: center;
+}
+.download-title {
+    font-size: 28px;
+    font-weight: light;
+}
+.download-text {
+    padding-top: 15px;
+    padding-bottom: 38px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.button-2 {
+    background-color: #e84545;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 14px 50px;
+}
+.footer {
+    margin: 0;
+    background-color: #313454;
+    padding: 30px 0;
+}
+.reserved {
+    text-align: center;
+    color: #7b7b7d;
+}
